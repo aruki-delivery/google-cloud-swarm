@@ -21,11 +21,11 @@ resources:
   properties:
 
     #Cluster Config
-    prefix: my-swarm
-    zone: us-central1-f
+    prefix: aruki-google-swarm
+    zone: europe-west1-b 
 
     #Manager Config
-    manager_machine_type: n1-standard-1
+    manager_machine_type: n1-standard-2
     manager_disk: 100
 
     #Worker Config
