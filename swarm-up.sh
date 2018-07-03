@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # 	Copyright 2016, Google, Inc.
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -32,13 +33,13 @@ do
 done
 echo $STATUS
 
-echo "Adding Manager to docker-machine"
+#echo "Adding Manager to docker-machine"
 
-docker-machine rm -f $PREFIX-manager
-docker-machine create $PREFIX-manager -d google \
-  --google-zone $ZONE \
-  --google-project $PROJECT_ID \
-  --google-use-existing
+#docker-machine rm -f $PREFIX-manager
+#docker-machine create $PREFIX-manager -d google \
+#  --google-zone $ZONE \
+#  --google-project $PROJECT_ID \
+#  --google-use-existing
 
 echo "Swarm Created!"
-echo "eval $(docker-machine env $PREFIX-manager)"
+#echo "eval $(docker-machine env $PREFIX-manager)"
